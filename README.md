@@ -43,7 +43,7 @@ This application is a study of media queries and responsive layouts for differen
 <img src="./images/phone3.png" height=680px>
 
 ## Demonstration
-[Link (deploy)](This application is a study of media queries and responsive layouts for different screen sizes. )
+[Link (deploy)](https://coffee-lovers-online-shop.vercel.app/)
 
 
 ## How to run the application
