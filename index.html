@@ -4,60 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Lovers</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="img/png" href="./images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Coffee Lovers Shop</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Sobre a loja</a>
-                </li>
-                <li>
-                    <a href="#">Produtos</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container container-flex">
+            <h1>Coffee Lovers</h1>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="#about-section">Sobre a loja</a>
+                    </li>
+                    <li>
+                        <a href="#products">Produtos</a>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="about-section">
-          <!--   <img src="./images/shop.jpg" alt="Interior da loja"> -->
-            <img src="./images/shop2.jpg" alt="Close de um máquina de expresso" >
-            <h2>Sobre a loja</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa rerum! Architecto magnam neque libero? Inventore illum eligendi reiciendis provident animi enim at, fugiat harum quia maxime dolorem exercitationem facere?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ipsa quam, adipisci eaque porro distinctio ea corrupti illo nostrum quis reprehenderit consectetur pariatur! Deleniti, vitae! At odio placeat a nobis!
-            </p>
-        </section>
-        <section id="products">
-            <h2>Produtos</h2>
-            <ul>
-                <li>
-                    <img src="https://dular.vteximg.com.br/arquivos/ids/5573862-1000-1000/image-61ba0874e016452195de9cd7a47d4cb2.jpg?v=638095851387830000" alt="Foto da máquina ZULAY MAGIA preta" class="product-img">
-                    <h3>Máquina de café expresso super automática ZULAY MAGIA com moedor de café e controle digital</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quas veniam. Molestias porro illo eveniet id earum corrupti asperiores enim! Ex facilis totam deleniti soluta optio, suscipit vel magnam? Impedit?</p>
-                    <button type="submit">Tenho interesse</button>
-                </li>
-                <li>
-                    <img src="https://cdn.leroymerlin.com.br/products/maquina_de_cafe_expresso_lov_basic_960ml_3_coracoes_1567869750_aba9_600x600.jpg" alt="Foto da máquina de café expresso Lov Basic" class="product-img">
-                    <h3>Máquina De Café Expresso Lov Basic 960ml 3 Corações</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quas veniam. Molestias porro illo eveniet id earum corrupti asperiores enim! Ex facilis totam deleniti soluta optio, suscipit vel magnam? Impedit?</p>
-                    <button type="submit">Tenho interesse</button>
-                </li>
-                <li>
-                    <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/468741/M-quina-De-Caf-Expresso-Philips-Walita-Lattego-127v_1688657969_g.jpg" alt="Foto da máquina de café expresso Philips Walita Lattego" class="product-img">
-                    <h3>Máquina De Café Expresso Philips Walita Lattego</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quas veniam. Molestias porro illo eveniet id earum corrupti asperiores enim! Ex facilis totam deleniti soluta optio, suscipit vel magnam? Impedit?</p>
-                    <button type="submit">Tenho interesse</button>
-                </li>
-                <li>
-                    <img src="https://ae01.alicdn.com/kf/H72db44bfc4fd454aaf984144e186c505j/Cafeteira-italiana-tipo-espresso-m-quina-com-espuma-de-leite-varinha-para-espresso-20bar-cappuccino-latte.jpg" alt="Foto da cafeteira italiana" class="product-img">
-                    <h3>Cafeteira italiana tipo espresso, máquina com espuma de leite, varinha para espresso, 20bar, cappuccino, latte e mocha.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quas veniam. Molestias porro illo eveniet id earum corrupti asperiores enim! Ex facilis totam deleniti soluta optio, suscipit vel magnam? Impedit?</p>
-                    <button type="submit">Tenho interesse</button>
-                </li>
-            </ul>
-        </section>
+        <div class="container">
+            <section id="about-section">
+                <img src="./images/shop-front.png" alt="Exterior Coffee Lovers Shop" id="about-img">
+                <div>
+                    <h2>Sobre a loja</h2>
+                    <hr/>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa rerum! Architecto magnam neque libero? Inventore illum eligendi reiciendis provident animi enim at, fugiat harum quia maxime dolorem exercitationem facere?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ipsa quam, adipisci eaque porro distinctio ea corrupti illo nostrum quis reprehenderit consectetur pariatur! Deleniti, vitae! At odio placeat a nobis!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores culpa, nulla mollitia saepe delectus veniam temporibus ut nam aut suscipit accusamus eveniet debitis facilis ratione? 
+                    </p>
+                </div>
+                
+            </section>
+            <section id="products">
+                <h2>Produtos</h2>
+                <hr/>
+                <ul class="container-flex product-container-queries">
+                    <li class="product-card">
+                        <img src="https://dular.vteximg.com.br/arquivos/ids/5573862-1000-1000/image-61ba0874e016452195de9cd7a47d4cb2.jpg?v=638095851387830000" alt="Foto da máquina ZULAY MAGIA preta" class="product-img">
+                        <div class="product-info">
+                            <h3>Máquina de café expresso automática ZULAY MAGIA</h3> 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>                        
+                        </div>
+                        <button type="submit">Tenho interesse</button>
+                    </li>
+                    <li class="product-card">
+                        <img src="https://cdn.leroymerlin.com.br/products/maquina_de_cafe_expresso_lov_basic_960ml_3_coracoes_1567869750_aba9_600x600.jpg" alt="Foto da máquina de café expresso Lov Basic" class="product-img">
+                        <div class="product-info">
+                            <h3>Máquina De Café Expresso Lov Basic 960ml 3 Corações</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>                            
+                        </div>        
+                        <button type="submit">Tenho interesse</button>                
+                    </li>
+                    <li class="product-card">
+                        <img src="https://cdn.leroymerlin.com.br/products/cafeteira_expresso_xpert_perfect_brew_oster_110v_1567128954_f1dc_600x600.jpg" alt="Foto da máquina de café Brew Oster" class="product-img">
+                        <div class="product-info">
+                            <h3>Cafeteira Expresso Xpert Perfect Brew Oster</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>                            
+                        </div>
+                        <button type="submit">Tenho interesse</button>
+                    </li>
+                    <li class="product-card">
+                        <img src="https://cdn.leroymerlin.com.br/products/cafeteira_philco_coffee_express_15_bar_filtro_permanente_127v_1553806662_fab0_300x300.jpg" alt="Foto da máquina de café Philco Coffee Expresso" class="product-img">
+                        <div class="product-info">
+                            <h3>Cafeteira Philco Coffee Express 15 Bar</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>                            
+                        </div>
+                        <button type="submit">Tenho interesse</button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        
     </main>
     </body>
 </html>
